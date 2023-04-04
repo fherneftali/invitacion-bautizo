@@ -1,15 +1,17 @@
 #titulo {
-    font-family: 'bestgirl';
-    font-weight: 300;
+    font-family: 'Bluebird';
+    font-weight: 100;
     margin-top: 5%;
-    color: #362915;
-    /*7E5109;*/
+    color: #717171;
+    background: linear-gradient(to bottom, #717171, #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .nombre {
     font-family: 'hangbird';
     font-size: 100px;
-    color: #520819;
+    color: #b679b4;
     /*text-shadow: 0.1em 0.1em 0.2em #b76e79;
     -webkit-text-stroke: 1.5px #D4AF37 #B76E79;  */
 }
@@ -21,13 +23,13 @@
 #separador {
     font-family: 'Amita';
     font-size: 3.5em;
-    color: #362915;
+    color: #5c5c5c;
 }
 
 #nombreClock {
     font-family: 'Amita';
     font-size: 20px;
-    color: #362915;
+    color: #5c5c5c;
 }
 
 @media screen and (max-width: 736px) {
@@ -38,7 +40,7 @@
     #separador {
         font-family: 'Amita';
         font-size: 2em;
-        color: #362915;
+        color: #5c5c5c;
     }
     #fecha .col-xs-2,
     #fecha .col-xs-1 {
