@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,900");
 @import url("fontawesome-all.min.css");
-@import url("./assets/webfonts/demo-hangbird.otf");
 html,
 body,
 div,
@@ -2534,4 +2533,14 @@ p {
     border: 5px solid #fff;
     box-shadow: 0 4px 6px 0 #ccc;
     border-radius: 50%;
+}
+
+@font-face {
+    font-family: 'hangbird';
+    src: url("../webfonts/demo-hangbird.otf");
+}
+
+@font-face {
+    font-family: 'hangbird';
+    src: url("../webfonts/demo-hangbird.otf");
 }
