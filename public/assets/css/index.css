@@ -1,0 +1,53 @@
+#titulo {
+    font-family: 'Great Vibes', sans-serif;
+    font-weight: 300;
+    margin-top: 5%;
+    color: #362915;
+    /*7E5109;*/
+}
+
+.nombre {
+    font-family: 'Amita', cursive;
+    font-size: 100px;
+    color: #520819;
+    /*text-shadow: 0.1em 0.1em 0.2em #b76e79;
+    -webkit-text-stroke: 1.5px #D4AF37 #B76E79;  */
+}
+
+#days,
+#hours,
+#minutes,
+#seconds,
+#separador {
+    font-family: 'Amita';
+    font-size: 3.5em;
+    color: #362915;
+}
+
+#nombreClock {
+    font-family: 'Amita';
+    font-size: 20px;
+    color: #362915;
+}
+
+@media screen and (max-width: 736px) {
+    #days,
+    #hours,
+    #minutes,
+    #seconds,
+    #separador {
+        font-family: 'Amita';
+        font-size: 2em;
+        color: #362915;
+    }
+    #fecha .col-xs-2,
+    #fecha .col-xs-1 {
+        width: auto;
+        padding-right: calc(var(--bs-gutter-x) * .1);
+        padding-left: calc(var(--bs-gutter-x) * 0.1);
+    }
+    #fecha {
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
