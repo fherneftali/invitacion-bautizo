@@ -29,13 +29,13 @@
 
     <!-- Header -->
     <header id="header">
-        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #f1e8fd;">
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e2deef;">
             <div class="container-fluid" style="justify-content: flex-end">
                 <button class="navbar-toggle" id="btnNav" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="background-color: #f1e8fd;">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="background-color: #e2deef;">
                         <li class="nav-item"><a class="nav-link active" href="#intro">Inicio</a></li>
                         <li class="nav-item"><a class="nav-link active" href="#one">Dónde y Cuándo</a></li>
                         <li class="nav-item"><a class="nav-link active" href="#work">Mi familia</a></li>
@@ -52,7 +52,9 @@
         <div class="content">
             <header>
                 <h1 class="titprin nombre">Marla Cecilia</h1>
-                <h2 id=titulo>Mis Quince Años</h2>
+                <div id="div-titulo">
+                    <h2 id=titulo>Mis Quince Años</h2>
+                </div>
             </header>
             <div onLoad="mostrar_hora()">
                 <div class="row" id="fecha">
@@ -108,28 +110,28 @@
     <section id="one" class="main style2 right dark fullscreen">
         <div class="content box style2">
             <header>
-                <p style="font-family: 'Great Vibes', cursive; font-size:3rem; padding: 0; margin-top: 0; color: #520819">¿Cuándo y Dónde?</p>
+                <p style="font-family: 'Great Vibes', cursive; font-size:3rem; padding: 0; margin-top: 0; color: #6c4272">¿Cuándo y Dónde?</p>
             </header>
-            <div class="row" style="justify-content:center; color: #362915">
+            <div class="row" style="justify-content:center; color: #39454b">
                 <div class="col-xs-6 col-sm-7">
-                    <p style="font-family: 'Trirong', serif;"><i class="bi-calendar-date"></i>20 de Diciembre del 2021, 20:00 hrs.</p>
+                    <p style="font-family: 'Trirong', serif;"><i class="bi-calendar-date"></i>12 de Abril del 2023, 09:00 P. M.</p>
                     <h4>Recepción</h4>
-                    <p style="font-family: 'Trirong', serif; font-weight: bold"><i class="bi-geo-alt"></i>Jardín Piedra Bonita</p>
-                    <p style="font-family: 'Trirong', serif; margin-bottom: 0 !important;">C. 21 de Marzo y Playa Las Glorias, Prados del Sur, Los Mochis, Sin.</p>
+                    <p style="font-family: 'Trirong', serif; font-weight: bold"><i class="bi-geo-alt"></i>Quinta Don Manuel</p>
+                    <p style="font-family: 'Trirong', serif; margin-bottom: 0 !important;">Carr. Mochis-Topo, km. 3.5, Los Mochis, Sin.</p>
                     <!-- Button trigger modal -->
                     <button type="button" class="btn btn-primary" id="verMapa" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                        <i class="bi bi-pin-map" style="color: #520819"></i>
+                        <i class="bi bi-pin-map" style="color: #39454b"></i>
                     </button>
                     <h4>Ceremonia</h4>
-                    <p style="font-family: 'Trirong', serif;"><i class="fas fa-church"></i>Parr. de Nuestra Señora del Rosario</p>
-                    <p style="font-family: 'Trirong', serif; margin-bottom: 0 !important;">Col. Morelos, 18:00 hrs.</p>
+                    <p style="font-family: 'Trirong', serif;"><i class="fas fa-church"></i>Iglesia del Sagrado Corazón de Jesús</p>
+                    <p style="font-family: 'Trirong', serif; margin-bottom: 0 !important;">07:00 P. M.</p>
                     <button type="button" class="btn btn-primary" id="verMapa" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
-                        <i class="bi bi-pin-map" style="color: #520819"></i>
+                        <i class="bi bi-pin-map" style="color: #39454b"></i>
                     </button>
                 </div>
                 <div class="col-xs-6 col-sm-5" id="mapa">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7186.483043028576!2d-108.98167101454369!3d25.76258489051851!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86ba2f76cb332e23%3A0xb52ab17c72641bf2!2sPiedra%20Bonita!5e0!3m2!1ses-419!2smx!4v1636316959618!5m2!1ses-419!2smx"
-                        width="300" height="200" style="border:2;" allowfullscreen="" loading="lazy"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3593.5672225487297!2d-109.005361285198!3d25.75182171529474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86ba2f9c2e92206d%3A0x19ac1ae62d96032b!2sQUINTA%20DON%20MANUEL!5e0!3m2!1ses-419!2smx!4v1680677438557!5m2!1ses-419!2smx" 
+                        width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
 
 
@@ -185,27 +187,32 @@
     <section id="work" class="main style3 primary">
         <div class="content">
             <header>
-                <p style="font-family: 'Great Vibes', cursive; font-size:3rem; padding: 0; margin-top: 0; color: #520819">Mi Familia</p>
+                <p style="font-family: 'Great Vibes', cursive; font-size:3rem; padding: 0; margin-top: 0; color: #6c4272">Mi Familia</p>
             </header>
             <!-- Gallery  -->
             <div class="gallery1">
                 <article class="from-left">
                     <img id="imgFamilia" src="images/mama.jpeg" title="The Anonymous Red" alt="" />
-                    <h3 style="font-family: 'Trirong', serif; color: #362915">Gemma Leyva Torres</h3>
+                    <h3 style="font-family: 'Trirong', serif; color: #362915">Juan Venegas Beltrán</h3>
+                    <p>Mi papá</p>
+                </article>
+                <article class="from-right">
+                    <img id="imgFamilia" src="images/mama.jpeg" title="The Anonymous Red" alt="" />
+                    <h3 style="font-family: 'Trirong', serif; color: #362915">Rosario Espínoza Leyva</h3>
                     <p>Mi mamá</p>
                 </article>
             </div>
             <header>
-                <p style="font-family: 'Great Vibes', cursive; font-size:3rem; padding: 0; margin-top: 0; color: #520819">Mis Padrinos</p>
+                <p style="font-family: 'Great Vibes', cursive; font-size:3rem; padding: 0; margin-top: 0; color: #6c4272">Mis Padrinos</p>
             </header>
             <div class="gallery">
                 <article class="from-left">
                     <img id="imgFamilia" src="images/jaime.jpg" title="The Anonymous Red" alt="" />
-                    <h3 style="font-family: 'Trirong', serif; color: #362915">Jaime Segura</h3>
+                    <h3 style="font-family: 'Trirong', serif; color: #362915">Benjamín Flores</h3>
                 </article>
                 <article class="from-right">
                     <img id="imgFamilia" src="images/jessica.jpg" title="Carry on" alt="" />
-                    <h3 style="font-family: 'Trirong', serif; color: #362915">Jessica Leyva</h3>
+                    <h3 style="font-family: 'Trirong', serif; color: #362915">Karla Venegas Beltrán</h3>
                 </article>
                 <!-- <article class="from-left">
                     <a href="images/fulls/05.jpg" class="image fit"><img src="images/thumbs/05.jpg" title="The sparkling shell" alt="" /></a>
@@ -221,7 +228,7 @@
     <section id="two" class="main style2 left dark fullscreen">
         <div class="content box style2" style="padding: 1em 2.5em 1em 2.5em; background: radial-gradient(#86384a87, #f0e9d3);">
             <header>
-                <p style="font-family: 'Great Vibes', cursive; font-size:3rem; padding: 0; margin-top: 0; color: #520819; text-align: center;">Fotos</p>
+                <p style="font-family: 'Great Vibes', cursive; font-size:3rem; padding: 0; margin-top: 0; color: #6c4272; text-align: center;">Fotos</p>
             </header>
         </div>
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
