@@ -1956,7 +1956,7 @@ body.is-touch .poptrox-popup .closer {
     left: 0;
     top: 0;
     width: 100%;
-    background: #c2b68e;
+    background: #f1e8fd;
     /*rgba(194, 182, 142, 0.5); */
     height: 50px;
     line-height: 3em;
@@ -1997,7 +1997,7 @@ body.is-touch .poptrox-popup .closer {
 
 #header nav ul li a {
     display: block;
-    color: #362915;
+    color: #764273;
     text-decoration: none;
     height: 3em;
     line-height: 3em;
@@ -2188,7 +2188,7 @@ body {
 }
 
 .main.dark .button.style2 {
-    border-color: #7E5109;
+    border-color: #764273;
 }
 
 .main.dark .button.style2:hover {
@@ -2438,13 +2438,13 @@ p {
 /* Intro */
 
 #intro {
-    background: url("images/overlay.png"), url("../../images/golden-glitter-c.png")/*linear-gradient(#c2b68e, #f0e9d3)*/
+    one background: url("images/overlay.png"), url("../../images/golden-glitter-c.png")/*linear-gradient(#c2b68e, #f0e9d3)*/
     ;
     background-size: 256px 256px, cover;
     /*background-attachment: fixed, fixed;
      background-position: top, center; */
     background-repeat: repeat, no-repeat;
-    background-color: #f0e9d3;
+    background-color: #ffffff;
     /* Rosa #f3d1d6;*/
 }
 
@@ -2457,7 +2457,7 @@ p {
     background-attachment: fixed, fixed;
     background-position: top left, center center;
     background-repeat: no-repeat;
-    box-shadow: 0px 0 15px 10px #7E5109;
+    box-shadow: 0px 0 15px 10px #764273;
 }
 
 

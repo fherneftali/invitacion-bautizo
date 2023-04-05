@@ -3,7 +3,7 @@
     font-weight: 100;
     margin-top: 5%;
     color: #717171;
-    background: linear-gradient(to bottom, #717171, #fff);
+    background: linear-gradient(#717171, #d9d7d7 70%, #717171);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -23,13 +23,13 @@
 #separador {
     font-family: 'Amita';
     font-size: 3.5em;
-    color: #5c5c5c;
+    color: #764273;
 }
 
 #nombreClock {
     font-family: 'Amita';
     font-size: 20px;
-    color: #5c5c5c;
+    color: #764273;
 }
 
 @media screen and (max-width: 736px) {
@@ -40,7 +40,7 @@
     #separador {
         font-family: 'Amita';
         font-size: 2em;
-        color: #5c5c5c;
+        color: #764273;
     }
     #fecha .col-xs-2,
     #fecha .col-xs-1 {
