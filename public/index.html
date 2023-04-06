@@ -111,96 +111,53 @@
         <header>
             <p style="font-family: 'Great Vibes', cursive; font-size:3rem; padding: 0; margin-top: 0; color: #6c4272">¿Cuándo y Dónde?</p>
         </header>
-        <div class="row" style="display: flex;">
-            <div class="content box style2">
-                <p style="font-family: 'Trirong', serif;"><i class="bi-calendar-date"></i>12 de Abril del 2023, 09:00 P. M.</p>
-                <h4>Ceremonia</h4>
-                <p style="font-family: 'Trirong', serif;"><i class="fas fa-church"></i>Iglesia del Sagrado Corazón de Jesús</p>
-                <p style="font-family: 'Trirong', serif; margin-bottom: 0 !important;">07:00 P. M.</p>
+        <div class="cont-reception">
+            <div class="box style2" id="box-relig">
+                <h4>Ceremonia Religiosa</h4>
+                <div style="display: flex; justify-content: center"><img id="imgFamilia" src="images/iglesia.jpg"/></div>
+                <p style="font-family: 'Trirong', serif; font-weight: bold; color: #404040; font-size: 1.2em;">Iglesia del Sagrado Corazón de Jesús</p>
+                <p style="font-family: 'Trirong', serif; color: #404040;"><i class="bi-calendar-date"></i><span style="font-weight: bold;">Cuando: </span>12 de Abril del 2023, 07:00 P. M.</p>                
+                <p style="font-family: 'Trirong', serif; margin-bottom: 0 !important; color: #404040;";"><i class="bi bi-pin-map"></i><span style="font-weight: bold;">Dirección: </span> Fco. Javier Mina s/n, Centro, Los Mochis, Sin.</p>
                 <button type="button" class="btn btn-primary" id="verMapa" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
-                        <i class="bi bi-pin-map" style="color: #39454b"></i>
+                        <i class="bi bi-pin-map" style="color: #39454b"></i>Ver Mapa
                 </button>
             </div>
-            <div class="content box style2">
-                <p style="font-family: 'Trirong', serif;"><i class="bi-calendar-date"></i>12 de Abril del 2023, 09:00 P. M.</p>
+            <div class="box style2" id="box-party">
                 <h4>Recepción</h4>
-                <p style="font-family: 'Trirong', serif; font-weight: bold"><i class="bi-geo-alt"></i>Quinta Don Manuel</p>
-                <p style="font-family: 'Trirong', serif; margin-bottom: 0 !important;">Carr. Mochis-Topo, km. 3.5, Los Mochis, Sin.</p>
-                <!-- Button trigger modal -->
+                <div style="display: flex; justify-content: center"><img id="imgFamilia" src="images/quinta-don-manuel.jpg" /></div>
+                <p style="font-family: 'Trirong', serif; font-weight: bold; color: #404040; font-size: 1.2em;">Quinta Don Manuel</p>
+                <p style="font-family: 'Trirong', serif; color: #404040;"><i class="bi-calendar-date"></i><span style="font-weight: bold;">Cuando: </span>12 de Abril del 2023, 09:00 P. M.</p>
+                <p style="font-family: 'Trirong', serif; margin-bottom: 0; !important; color: #404040;""><span style="font-weight: bold;">Dirección: </span> Carr. Mochis-Topo, km. 3.5, Los Mochis, Sin.</p>
                 <button type="button" class="btn btn-primary" id="verMapa" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                    <i class="bi bi-pin-map" style="color: #39454b"></i>
+                    <i class="bi bi-pin-map" style="color: #39454b"></i>Ver Mapa
                 </button>
             </div>
         </div>
-        <!-- Modal -->
-        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="staticBackdropLabel" style="color: #7b467c">Recepción</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3593.5672225487297!2d-109.005361285198!3d25.75182171529474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86ba2f9c2e92206d%3A0x19ac1ae62d96032b!2sQUINTA%20DON%20MANUEL!5e0!3m2!1ses-419!2smx!4v1680677438557!5m2!1ses-419!2smx"
-                            width="250" height="200" style="border:2;" allowfullscreen="" loading="lazy"></iframe>
-                        <p style="font-family: 'Trirong', serif; font-weight: bold"><i class="bi-geo-alt"></i>Quinta Don Manuel</p>
-                        <p style="font-family: 'Trirong', serif;">Carr. Mochis-Topo, km. 3.5, Los Mochis, Sin.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="staticBackdropLabel" style="color: #7b467c">Ceremonia</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2136.081082442531!2d-108.99780438629462!3d25.788861199373834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86ba25f86b859feb%3A0x4909c152ff3d2c1d!2sParroquia%20El%20Sagrado%20Coraz%C3%B3n%20de%20Jes%C3%BAs!5e0!3m2!1ses-419!2smx!4v1680716124150!5m2!1ses-419!2smx"
-                            width="250" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        <p style="font-family: 'Trirong', serif; font-weight: bold"><i class="bi-geo-alt"></i>Iglesia del Sagrado Corazón de Jesús</p>
-                        <p style="font-family: 'Trirong', serif;">07:00 P. M.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-
-
         <a href="#two" class="button style2 down anchored">Next</a>
     </section>
 
     <!-- Work -->
     <section id="work" class="main style3 primary">
-        <div class="content">
-            <header>
-                <p style="font-family: 'Great Vibes', cursive; font-size:3rem; padding: 0; margin-top: 0; color: #6c4272">Mi Familia</p>
-            </header>
+        <div class="content cont-family">
             <!-- Gallery  -->
             <div class="gallery1">
+                <header>
+                    <p style="font-family: 'Great Vibes', cursive; font-size:3rem; padding: 0; margin-top: 0; color: #6c4272">Mis Padres</p>
+                </header>
                 <article class="from-left">
-                    <img id="imgFamilia" src="images/mama.jpeg" title="The Anonymous Red" alt="" />
-                    <h3 style="font-family: 'Trirong', serif; color: #362915">Juan Venegas Beltrán</h3>
-                    <p>Mi papá</p>
-                </article>
-                <article class="from-right">
-                    <img id="imgFamilia" src="images/mama.jpeg" title="The Anonymous Red" alt="" />
-                    <h3 style="font-family: 'Trirong', serif; color: #362915">Rosario Espínoza Leyva</h3>
-                    <p>Mi mamá</p>
+                    <img id="imgFamilia" src="images/papas.jpeg" title="The Anonymous Red" alt="" />
+                    <h3 style="font-family: 'Trirong', serif; color: #5f5f5f">Juan Venegas Beltrán</h3>
+                    <h3 style="font-family: 'Trirong', serif; color: #5f5f5f">Rosario Espínoza Leyva</h3>
                 </article>
             </div>
-            <header>
-                <p style="font-family: 'Great Vibes', cursive; font-size:3rem; padding: 0; margin-top: 0; color: #6c4272">Mis Padrinos</p>
-            </header>
-            <div class="gallery">
+            <div class="gallery1">
+                <header>
+                    <p style="font-family: 'Great Vibes', cursive; font-size:3rem; padding: 0; margin-top: 0; color: #6c4272">Mis Padrinos</p>
+                </header>
                 <article class="from-left">
-                    <img id="imgFamilia" src="images/jaime.jpg" title="The Anonymous Red" alt="" />
-                    <h3 style="font-family: 'Trirong', serif; color: #362915">Benjamín Flores</h3>
-                </article>
-                <article class="from-right">
-                    <img id="imgFamilia" src="images/jessica.jpg" title="Carry on" alt="" />
-                    <h3 style="font-family: 'Trirong', serif; color: #362915">Karla Venegas Beltrán</h3>
+                    <img id="imgFamilia" src="images/padrinos.jpeg" title="The Anonymous Red" alt="" />
+                    <h3 style="font-family: 'Trirong', serif; color: #5f5f5f">Benjamín Flores</h3>
+                    <h3 style="font-family: 'Trirong', serif; color: #5f5f5f">Karla Venegas Beltrán</h3>
                 </article>
                 <!-- <article class="from-left">
                     <a href="images/fulls/05.jpg" class="image fit"><img src="images/thumbs/05.jpg" title="The sparkling shell" alt="" /></a>
@@ -263,8 +220,6 @@
         </div>
     </section>
 
-
-
     <!-- Contact -->
     <section id="contact" class="main style3 secondary">
         <div class="content">
@@ -323,6 +278,41 @@
 
     </footer>
 
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="staticBackdropLabel" style="color: #7b467c">Recepción</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="padding: 1rem 2rem;">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3593.5672225487297!2d-109.005361285198!3d25.75182171529474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86ba2f9c2e92206d%3A0x19ac1ae62d96032b!2sQUINTA%20DON%20MANUEL!5e0!3m2!1ses-419!2smx!4v1680677438557!5m2!1ses-419!2smx"
+                        id="iframe-map" allowfullscreen="" loading="lazy"></iframe>
+                    <p style="font-family: 'Trirong', serif; font-weight: bold; color: #404040; font-size: 1.2em;">Iglesia del Sagrado Corazón de Jesús</p>
+                    <p style="font-family: 'Trirong', serif; color: #404040;"><i class="bi-calendar-date"></i><span style="font-weight: bold;">Cuando: </span>12 de Abril del 2023, 07:00 P. M.</p>                
+                    <p style="font-family: 'Trirong', serif; margin-bottom: 0 !important; color: #404040;";"><i class="bi bi-pin-map"></i><span style="font-weight: bold;">Dirección: </span> Fco. Javier Mina s/n, Centro, Los Mochis, Sin.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="staticBackdropLabel" style="color: #7b467c">Ceremonia</h4>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" style="padding: 1rem 2rem;">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2136.081082442531!2d-108.99780438629462!3d25.788861199373834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86ba25f86b859feb%3A0x4909c152ff3d2c1d!2sParroquia%20El%20Sagrado%20Coraz%C3%B3n%20de%20Jes%C3%BAs!5e0!3m2!1ses-419!2smx!4v1680716124150!5m2!1ses-419!2smx"
+                        id="iframe-map" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <p style="font-family: 'Trirong', serif; font-weight: bold; color: #404040; font-size: 1.2em;">Quinta Don Manuel</p>
+                    <p style="font-family: 'Trirong', serif; color: #404040;"><i class="bi-calendar-date"></i><span style="font-weight: bold;">Cuando: </span>12 de Abril del 2023, 09:00 P. M.</p>
+                    <p style="font-family: 'Trirong', serif; margin-bottom: 0; !important; color: #404040;""><span style="font-weight: bold;">Dirección: </span> Carr. Mochis-Topo, km. 3.5, Los Mochis, Sin.</p>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="assets/js/jquery.min.js"></script>

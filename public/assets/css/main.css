@@ -619,17 +619,6 @@ select {
     }
 }
 
-@media screen and (min-width: 737px) {
-    #verMapa {
-        display: none;
-    }
-}
-
-#staticBackdrop .modal-dialog,
-#staticBackdrop2 .modal-dialog {
-    margin-top: 40%;
-}
-
 #staticBackdrop .modal-content,
 #staticBackdrop2 .modal-content {
     background-color: #e5d8e9;
@@ -723,7 +712,7 @@ table {
 
 .box {
     background: rgba(244, 244, 244);
-    color: #472302;
+    color: #5f5f5f;
     padding: 2em;
 }
 
@@ -741,16 +730,16 @@ table {
     }
     .box.style2 {
         padding: 1.5em 1.25em 1.5em 1.25em;
-        background-color: rgba(207, 197, 222, 0.6);
+        background-color: rgba(244, 244, 244);
     }
 }
 
 #verMapa {
     background-color: #dec6fa;
-    font-weight: bold;
+    font-weight: 400;
     color: #000;
     width: auto;
-    border-radius: 50%;
+    /* border-radius: 50%; */
     height: 2.5em;
     border-color: #c3a7e3;
     margin-bottom: 1em;
@@ -1523,8 +1512,54 @@ body.is-touch .poptrox-popup .closer {
         background-size: contain;
         opacity: 0.65;
     }
+    .cont-reception{
+        display: flex; 
+        flex-direction: column;
+        align-items: center;
+    }
+    #box-relig, #box-party{
+        margin: 10px 20px;
+    }
+    .cont-family{
+        display: flex;
+        flex-direction: column;
+    }
+    #staticBackdrop .modal-dialog,
+    #staticBackdrop2 .modal-dialog {
+        margin-top: 20%;
+    }
+    iframe#iframe-map{
+        width: 300px;
+        height: 200px;
+    }
 }
 
+@media screen and (min-width: 737px) {
+    .cont-reception{
+        display: flex; 
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    #box-relig{
+        margin-right: 3%; 
+        width: 50%;
+    }
+    #box-party{
+        margin-left: 3%;
+        width: 50%;
+    }
+    .cont-family{
+        display: inline-flex;
+    }
+    #staticBackdrop .modal-dialog,
+    #staticBackdrop2 .modal-dialog {
+        margin-top: 10%;
+    }
+    iframe#iframe-map{
+        width: 400px;
+        height: 200px;
+    }
+}
 
 /* Gallery */
 
@@ -1539,8 +1574,8 @@ body.is-touch .poptrox-popup .closer {
     flex-wrap: wrap;
     width: 45em;
     max-width: 100%;
-    margin: 0 auto 2em auto;
-    flex-direction: row;
+    /* margin: 0 auto 2em auto; */
+    flex-direction: column;
     align-items: center;
     justify-content: space-around;
 }
@@ -2061,7 +2096,7 @@ body {
 }
 
 .main>.content {
-    width: 45em;
+    /* width: 45em; */
     max-width: calc(100% - 4em);
     margin: 0 auto;
 }
