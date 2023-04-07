@@ -957,7 +957,7 @@ textarea {
     width: 100%;
     padding: 0.65em 0.75em;
     background: none;
-    border: solid 1px #e7ca9c;
+    border: solid 1px #dec6fa;
     color: inherit;
     border-radius: 0.5em;
     outline: none;
@@ -1559,6 +1559,10 @@ body.is-touch .poptrox-popup .closer {
         width: 400px;
         height: 200px;
     }
+}
+
+#box-relig, #box-party{
+    box-shadow: 0 10px 15px 0px #9574bb;
 }
 
 /* Gallery */
@@ -2264,6 +2268,7 @@ p {
     }
     #indicador {
         top: 60%;
+        justify-content: center;
     }
 }
 
@@ -2305,7 +2310,7 @@ p {
         height: auto !important;
     }
     .main.style1 {
-        padding: 4em 15px 4em 15px;
+        padding: 2em 15px 1em 15px;
     }
     .main.style1 h2 {
         font-size: 3em;
@@ -2336,6 +2341,7 @@ p {
     }
     #indicador {
         top: 30%;
+        justify-content: flex-end;
     }
     .main.style2.right {
         justify-content: center !important;
@@ -2364,7 +2370,6 @@ p {
     margin-bottom: 2rem;
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
     text-align: center;
     color: #6c4272;
@@ -2469,13 +2474,20 @@ p {
         margin-top: 0;
         padding-top: 0;
     }
+    #intro {
+        background: url("images/overlay.png"), url("../../images/bg-header-vertical.jpg");
+    }
 }
 
+@media screen and (min-width: 737px) {
+    #intro {
+        background: url("images/overlay.png"), url("../../images/bg-header-complete.jpg");
+    }
+}
 
 /* Intro */
 
 #intro {
-    background: url("images/overlay.png"), url("../../images/bg-header-complete.jpg");
     background-size: auto, 100%;
     background-repeat: repeat, no-repeat;
     background-color: #ffffff;
@@ -2505,19 +2517,19 @@ p {
     background-position: top left, center center;
     background-color: #dec6fa;
     min-height: auto;
-    box-shadow: 0 10px 15px #7e5109;
+    box-shadow: 0 10px 15px #dec6fa;
     /* flex-direction: row !important;
     flex-wrap: wrap !important; */
 }
 
 #work {
     background-color: #ebd3e9;
-    box-shadow: inset 0px -11px 15px -10px #7E5109, inset 0px 11px 15px -10px #7E5109;
+    box-shadow: inset 0px -11px 15px -10px #b679b4, inset 0px 11px 15px -10px #b679b4;
 }
 
 #lblckA,
 #lblckNa {
-    color: #7e5109;
+    color: #717171;
 }
 
 
@@ -2526,7 +2538,7 @@ p {
 #contact {
     overflow: hidden;
     padding-bottom: 0;
-    background-color: #b679b4;
+    background-color: #dabef9;
     box-shadow: inset 0px 15px 10px -10px #460816;
 }
 

@@ -14,9 +14,7 @@
 
 .nombre {
     font-family: 'hangbird';
-    font-size: 8em;
     color: #b679b4;
-    margin-top: 1.5em;
 }
 
 #days,
@@ -54,5 +52,15 @@
     #fecha {
         justify-content: space-between;
         flex-wrap: wrap;
+    }
+    .nombre {
+        font-size: 5.5em;
+        margin-top: 1em;
+    }
+}
+@media screen and (min-width: 737px) {
+    .nombre {
+        font-size: 8em;
+        margin-top: 1.5em;
     }
 }
