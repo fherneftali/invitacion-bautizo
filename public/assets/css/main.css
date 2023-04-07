@@ -1991,8 +1991,8 @@ body.is-touch .poptrox-popup .closer {
 /* Header */
 
 #header {
-    position: fixed;
-    /* z-index: 10000; */
+    position: absolute;
+    z-index: 10000;
     left: 0;
     top: 0;
     width: 100%;
