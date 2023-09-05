@@ -1,20 +1,26 @@
-#titulo {
-    font-family: 'Bluebird';
-    font-weight: 100;
-    color: #717171;
-
+#titulo, #titulox {
+    font-family: 'Great Vibes', cursiva;
+    font-size: 3em;
+    color: #362536;
 }
 
 #div-titulo{
     padding: 15px;
-    background: linear-gradient(0deg, rgba(180,176,176,1) 0%, rgba(196,196,196,1) 23%, rgba(113,113,113,1) 100%);    
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    /* background: linear-gradient(0deg, rgba(180,176,176,1) 0%,  rgba(54,37,54,1) 100%);
+    /* linear-gradient(0deg, rgba(180,176,176,1) 0%, rgba(196,196,196,1) 23%, rgba(113,113,113,1) 100%);     */
+    /*-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+}
+
+#div-titulo p{
+    color: #362536;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
 }
 
 .nombre {
-    font-family: 'hangbird';
-    color: #b679b4;
+    font-family: 'Great Vibes', cursiva;
+    color: #362536;
 }
 
 #days,
@@ -22,15 +28,89 @@
 #minutes,
 #seconds,
 #separador {
-    font-family: 'Amita';
-    font-size: 3.5em;
-    color: #764273;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em;
+    color: #5d545d;
 }
 
 #nombreClock {
-    font-family: 'Amita';
-    font-size: 20px;
-    color: #764273;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    color: #5d545d;
+}
+.fecha{
+    color: #404040; font-size: 1.3em; font-family: montserrat; text-transform: uppercase;
+}
+
+.fecha span{
+    font-size: 0.7em;
+}
+
+#imageFile{
+    display: none;
+    margin-bottom: 2vh;
+}
+
+.de-button{
+    display: inline-block;
+    margin: 0 auto;
+    margin: 0 10px 20px 0;
+    background-color: #666666 !important;
+    color: #FFF;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    border: solid 1px;
+    text-decoration: none;
+}
+
+#staticBackdropLabel{
+    color: #362536; 
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.foto{
+    margin-bottom: 300px; 
+    height: 100px; 
+    width: 100px; 
+    float: left; 
+    margin: 8px
+}
+
+#preloader{
+    background-color: #c7c4c4c2;
+    position: fixed;
+    z-index: 1000;
+    height: 100vh;
+    width: 100vw;
+}
+
+.showLoader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hideLoader{
+    display: none;
+}
+
+#preloader img{
+    width: 50vw;
+}
+
+.agregar-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: white;
+    color: #4a4a4a !important;
+    text-decoration: none;
+    border-radius: 5px;
+    border: solid 0px #c4c4c4;
+    margin-bottom: 70px;
+    font-size: 14px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 @media screen and (max-width: 736px) {
@@ -40,8 +120,8 @@
     #seconds,
     #separador {
         font-family: 'Amita';
-        font-size: 2em;
-        color: #764273;
+        font-size: 1.5em;
+        color: #5d545d;
     }
     #fecha .col-xs-2,
     #fecha .col-xs-1 {
@@ -55,12 +135,53 @@
     }
     .nombre {
         font-size: 5.5em;
-        margin-top: 1em;
+        /* margin-top: 1em; */
+    }
+    #titulo {
+        font-weight: 400;
+    }
+    #content-intro{
+        margin-top: 10vh;
+    }
+    #cuando{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: nowrap;
+        width: 80vw;
+        height: 10vh;
+        align-items: center;
+        margin-bottom: 1em;
+    }
+    .direccion, #dresscode{
+        font-family: 'Raleway', sans-serif; font-weight: 400; text-align: center; color: #362536;
+    }
+    #lugar{
+        font-family: 'Great Vibes', cursiva; font-weight: 400; font-size: 2.5em; text-align: center; color: #362536;
+    }
+    #dresscode{
+        margin-bottom: 5vh !important;
+    }
+    .container{
+        display: block;
+        padding: 0 !important;
+    }
+    .oculto{
+        display: none;
     }
 }
 @media screen and (min-width: 737px) {
     .nombre {
         font-size: 8em;
-        margin-top: 1.5em;
+        /* margin-top: 1.5em; */
+    }
+
+    .oculto{
+        display: block;
+        text-align: center;
+    }
+
+    .container{ 
+        display: none;
     }
 }

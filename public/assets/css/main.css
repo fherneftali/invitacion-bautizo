@@ -619,11 +619,6 @@ select {
     }
 }
 
-#staticBackdrop .modal-content,
-#staticBackdrop2 .modal-content {
-    background-color: #e5d8e9;
-}
-
 h1,
 h2,
 h3,
@@ -734,15 +729,15 @@ table {
     }
 }
 
-#verMapa {
-    background-color: #dec6fa;
+#verMapa, #btnConfirma {
+    background-image: url(images/nude2.jpg) !important;
     font-weight: 400;
-    color: #000;
+    color: #FFF;
     width: auto;
     /* border-radius: 50%; */
     height: 2.5em;
-    border-color: #c3a7e3;
     margin-bottom: 1em;
+    letter-spacing: 1px;
 }
 
 
@@ -781,8 +776,8 @@ input[type="submit"].down,
 input[type="reset"].down,
 .button.down,
 button.down {
-    width: 5em;
-    height: 5em;
+    width: 2em;
+    height: 2em;
     line-height: 4.5em;
     padding: 0;
     background-image: url("images/dark-arrow.svg");
@@ -835,7 +830,7 @@ input[type="reset"].style2,
 .button.style2,
 button.style2 {
     background-color: transparent;
-    border: solid 2px #472302;
+    border: solid 1px #5d545d;
     color: inherit;
 }
 
@@ -952,15 +947,16 @@ textarea {
     -webkit-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
     -ms-transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
     transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
-    color: #c5974d;
+    color: #555;
     display: block;
     width: 100%;
     padding: 0.65em 0.75em;
     background: none;
-    border: solid 1px #dec6fa;
+    border: solid 1px #ced4da;
     color: inherit;
     border-radius: 0.5em;
     outline: none;
+    font-family: 'Raleway', sans-serif !important;
 }
 
 input[type="text"]:focus,
@@ -971,7 +967,7 @@ input[type="search"]:focus,
 input[type="url"]:focus,
 select:focus,
 textarea:focus {
-    border-color: #dbabcf;
+    border-color: #646464;
 }
 
 input[type="text"],
@@ -1270,10 +1266,11 @@ ul.icons a {
     border: 0;
 }
 
-#fieldRadios .form-check {
-    display: inline-flex;
-    justify-content: center;
+#fieldRadios {
+    display: flex;
+    justify-content: space-around;
     color: #362915;
+    margin-bottom: 3vh;
 }
 
 
@@ -1290,7 +1287,7 @@ header p {
 }
 
 footer {
-    margin-top: 2em;
+    margin-top: 1em;
 }
 
 
@@ -1996,7 +1993,7 @@ body.is-touch .poptrox-popup .closer {
     left: 0;
     top: 0;
     width: 100%;
-    background: #e2deef;
+    /* background: #fff2ea; */
     /*rgba(194, 182, 142, 0.5); */
     height: 50px;
     line-height: 3em;
@@ -2037,7 +2034,7 @@ body.is-touch .poptrox-popup .closer {
 
 #header nav ul li a {
     display: block;
-    color: #764273;
+    color: #362536;
     text-decoration: none;
     height: 3em;
     line-height: 3em;
@@ -2057,6 +2054,7 @@ body.is-touch .poptrox-popup .closer {
     #header {
         height: 70px;
         line-height: 70px;
+        display: none;
     }
     #header h1 {
         text-align: center;
@@ -2071,7 +2069,7 @@ body.is-touch .poptrox-popup .closer {
     }
     #header button {
         display: inline-block;
-        background-color: #e2deef;
+        background-color: #fff2ea;
     }
 }
 
@@ -2081,7 +2079,7 @@ body {
 
 @media screen and (max-width: 736px) {
     body {
-        padding-top: 2.5em;
+        padding-top: 0;
     }
 }
 
@@ -2109,9 +2107,7 @@ body {
     margin-bottom: 0;
 }
 
-.main.fullscreen {
-    min-height: 100%;
-}
+
 
 .main.style1 {
     -moz-align-items: center;
@@ -2157,7 +2153,7 @@ body {
     -webkit-justify-content: center;
     -ms-justify-content: center;
     justify-content: center;
-    padding: 2em 0 2em 0;
+    /* padding: 2em 0 2em 0; */
     overflow: hidden;
 }
 
@@ -2229,7 +2225,7 @@ body {
 }
 
 .main.dark .button.style2 {
-    border-color: #764273;
+    border-color: #5d545d;
 }
 
 .main.dark .button.style2:hover {
@@ -2242,6 +2238,7 @@ body {
 
 .main.dark .button.style2.down {
     background-image: url("images/dark-arrow.svg");
+    background-size: 1em;
 }
 
 body.is-touch .main {
@@ -2303,9 +2300,7 @@ p {
 }
 
 @media screen and (max-width: 736px) {
-    .main>.content br {
-        display: none;
-    }
+   
     .main.fullscreen {
         height: auto !important;
     }
@@ -2313,7 +2308,7 @@ p {
         padding: 2em 15px 1em 15px;
     }
     .main.style1 h2 {
-        font-size: 3em;
+        font-size: 2.3em;
     }
     .main.style2 {
         flex-direction: column;
@@ -2475,13 +2470,19 @@ p {
         padding-top: 0;
     }
     #intro {
-        background: url("images/overlay.png"), url("../../images/bg-header-vertical.jpg");
+        background: url("images/overlay-copia2.png"), url("../../images/bg-floral-mv.png");
     }
 }
 
 @media screen and (min-width: 737px) {
     #intro {
-        background: url("images/overlay.png"), url("../../images/bg-header-complete.jpg");
+        background: url("images/overlay-copia2.png"), url("../../images/bg-floral.png");
+    }
+    .main>.content br {
+        display: none;
+    }
+    .main.fullscreen {
+        min-height: 100%;
     }
 }
 
@@ -2497,7 +2498,7 @@ p {
 /* One */
 
 #one {
-    background-color: rgba(207, 197, 222);
+    background-color: rgb(255, 255, 255);
     /* background: url("images/overlay.png"), url("../../images/quinta-don-manuel.jpg");
     background-size: 100%, cover;
     background-attachment: fixed, fixed; 
@@ -2515,16 +2516,17 @@ p {
     background-size: 256px 256px, cover;
     background-attachment: fixed, fixed;
     background-position: top left, center center;
-    background-color: #dec6fa;
+    background-color: #ffffff;
     min-height: auto;
     box-shadow: 0 10px 15px #dec6fa;
     /* flex-direction: row !important;
     flex-wrap: wrap !important; */
+    padding-bottom: 3vh;
 }
 
 #work {
-    background-color: #ebd3e9;
-    box-shadow: inset 0px -11px 15px -10px #b679b4, inset 0px 11px 15px -10px #b679b4;
+    background-image: url(images/nude2.jpg) !important;
+    /* box-shadow: inset 0px -11px 15px -10px #b679b4, inset 0px 11px 15px -10px #b679b4; */
 }
 
 #lblckA,
@@ -2538,8 +2540,8 @@ p {
 #contact {
     overflow: hidden;
     padding-bottom: 0;
-    background-color: #dabef9;
-    box-shadow: inset 0px 15px 10px -10px #460816;
+    background-color: #ffffff;
+    /* box-shadow: inset 0px 15px 10px -10px #460816; */
 }
 
 #contact .box {
