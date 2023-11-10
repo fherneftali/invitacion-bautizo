@@ -1,6 +1,12 @@
-#titulo, #titulox {
-    font-family: 'Great Vibes', cursiva;
+#titulo {
+    font-family: 'Raleway', sans-serif;
     font-size: 3em;
+    color: #f6f6f6;
+}
+
+#titulox {
+    font-family: 'Raleway', sans-serif;
+    font-size: 2em;
     color: #362536;
 }
 
@@ -20,7 +26,11 @@
 
 .nombre {
     font-family: 'Great Vibes', cursiva;
-    color: #362536;
+    color: #f6f6f6;
+}
+
+header#intro{
+    margin-top: 10em;
 }
 
 #days,
@@ -28,13 +38,13 @@
 #minutes,
 #seconds,
 #separador {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 1.5em;
     color: #5d545d;
 }
 
 #nombreClock {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Raleway', sans-serif;
     font-size: 1em;
     color: #5d545d;
 }
@@ -97,7 +107,7 @@
 }
 
 #preloader img{
-    width: 50vw;
+    width: 30vw;
 }
 
 .agregar-btn {
@@ -134,14 +144,17 @@
         flex-wrap: wrap;
     }
     .nombre {
-        font-size: 5.5em;
+        font-size: 7em;
         /* margin-top: 1em; */
     }
     #titulo {
         font-weight: 400;
     }
     #content-intro{
-        margin-top: 10vh;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
     }
     #cuando{
         display: flex;

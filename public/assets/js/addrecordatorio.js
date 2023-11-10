@@ -1,8 +1,8 @@
 // Asignar los valores de PHP a variables de JavaScript
 var ano = "2023";
 var mes = Number("10") + 1; // Sumar 1 al mes
-var dia = "17";
-var hora= "190000";
+var dia = "18";
+var hora= "100000";
 
 // Asegurar que mes y día tengan dos dígitos
 mes = mes.toString().padStart(2, '0');
@@ -15,14 +15,14 @@ var startDate = ano + mes + dia + "T" + hora;
 document.getElementById('agregarCalendario').addEventListener('click', function(e) {
     e.preventDefault();
 
-    var title = "Recordatorio de Boda Beatriz y Josué";
+    var title = "Recordatorio del Bautizo de Jessica Anaylet";
     var description = "Llegó el gran día!";
 
     var icsMSG = "BEGIN:VCALENDAR\nVERSION:2.0\nBEGIN:VEVENT\n";
     icsMSG += "DTSTART;VALUE=DATE-TIME:" + startDate + "\n";
     icsMSG += "DESCRIPTION:" + description + "\n";
     icsMSG += "SUMMARY:" + title + "\n";
-    icsMSG += "LOCATION:" + "La Finca, Jardín de Eventos \n";
+    icsMSG += "LOCATION:" + "Parroquia de Nuestra Señora de San Juan de los Lagos \n";
     icsMSG += "DTSTAMP:" + "20180210T093900Z \n";
     icsMSG += "END:VEVENT\nEND:VCALENDAR";
     console.log(icsMSG)
@@ -30,7 +30,7 @@ document.getElementById('agregarCalendario').addEventListener('click', function(
     var link = window.URL.createObjectURL(blob);
     var a = document.createElement('a');
     a.href = link;
-    a.download = 'boda.ics';
+    a.download = 'bautizoanayleth.ics';
     a.click();
     window.URL.revokeObjectURL(link);
 });

@@ -1276,9 +1276,9 @@ ul.icons a {
 
 /* Sections/Article */
 
-header {
-    margin-bottom: 1em;
-}
+/* header {
+    margin-top: 10em;
+} */
 
 header p {
     display: block;
@@ -2305,7 +2305,7 @@ p {
         height: auto !important;
     }
     .main.style1 {
-        padding: 2em 15px 1em 15px;
+        padding: 2em 15px 2em 15px;
     }
     .main.style1 h2 {
         font-size: 2.3em;
@@ -2470,13 +2470,13 @@ p {
         padding-top: 0;
     }
     #intro {
-        background: url("images/overlay-copia2.png"), url("../../images/bg-floral-mv.png");
+        background: url("images/overlay-copia2.png"), url("../../assets/images/file.jpg");
     }
 }
 
 @media screen and (min-width: 737px) {
     #intro {
-        background: url("images/overlay-copia2.png"), url("../../images/bg-floral.png");
+        background: url("images/overlay-copia2.png"), url("../../assets/images/file.jpg");
     }
     .main>.content br {
         display: none;

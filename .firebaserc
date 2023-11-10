@@ -1,8 +1,5 @@
 {
   "projects": {
-    "default": "invitacionjb",
-    "invitacionjb": "invitacionjb"
-  },
-  "targets": {},
-  "etags": {}
+    "default": "inv-vx-romi"
+  }
 }
