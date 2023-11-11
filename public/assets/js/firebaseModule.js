@@ -14,9 +14,9 @@ const firebaseConfig = {
     projectId: "inv-bautizo-anayleth",
     storageBucket: "inv-bautizo-anayleth.appspot.com",
     messagingSenderId: "480092137159",
-    appId: "1:480092137159:web:24b8762638d8806decc0e2",
-    measurementId: "G-PB0RTVK0W1"
-  };
+    appId: "1:480092137159:web:5f381843040075c5ecc0e2",
+    measurementId: "G-B4H7KCLD08"
+};
 const firebaseApp = initializeApp(firebaseConfig);
 const auth = getAuth(firebaseApp);
 const storage = getStorage();
