@@ -9,21 +9,21 @@ import { getFirestore, doc, addDoc, getDoc, collection, getDocs } from 'https://
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-    apiKey: "AIzaSyC4k40Z6c5aTxRxTxni-hVqkVDzJG65e5Y",
-    authDomain: "inv-vx-romi.firebaseapp.com",
-    projectId: "inv-vx-romi",
-    storageBucket: "inv-vx-romi.appspot.com",
-    messagingSenderId: "981351669629",
-    appId: "1:981351669629:web:d8d0ee88debdb8a8473614",
-    measurementId: "G-9Y7BH1WM1X"
-};
+    apiKey: "AIzaSyBEkZO7EX0iLl16UWeYv9etkz6KDKNeflE",
+    authDomain: "inv-bautizo-anayleth.firebaseapp.com",
+    projectId: "inv-bautizo-anayleth",
+    storageBucket: "inv-bautizo-anayleth.appspot.com",
+    messagingSenderId: "480092137159",
+    appId: "1:480092137159:web:24b8762638d8806decc0e2",
+    measurementId: "G-PB0RTVK0W1"
+  };
 const firebaseApp = initializeApp(firebaseConfig);
 const auth = getAuth(firebaseApp);
 const storage = getStorage();
 const db = getFirestore(firebaseApp);
 const storageRef = ref(storage);
 const listRef = ref(storage, 'images/');
-//const docRef = doc(db, "confirmaciones", "RA9m40BozxZVyHjnlpfA");
+//const docRef = doc(db, "confirmaciones", "pOTukfLIUFhObf9r31B2");
 
 
 function handleFileSelect(evt) {
@@ -154,7 +154,7 @@ $("#verfotos").on('click', function(){
         }else{
             $("#preloader").removeClass("showLoader");
             $("#preloader").addClass("hideLoader");
-            Swal.fire('No se han agregado fotos al album #XVAñosRomina','','warning');
+            Swal.fire('No se han agregado fotos al album #MiBautizo','','warning');
         }
     }).catch((error) => {
         console.log(error);

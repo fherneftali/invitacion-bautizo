@@ -1,6 +1,6 @@
 #titulo {
     font-family: 'Raleway', sans-serif;
-    font-size: 3em;
+    font-size: 1.3em;
     color: #f6f6f6;
 }
 
@@ -27,6 +27,13 @@
 .nombre {
     font-family: 'Great Vibes', cursiva;
     color: #f6f6f6;
+    /*#d68c9d*/
+}
+
+.nombre2 {
+    font-family: 'Great Vibes', cursiva;
+    color: #d68c9d;
+    font-size: 4em;
 }
 
 header#intro{
@@ -40,16 +47,16 @@ header#intro{
 #separador {
     font-family: 'Raleway', sans-serif;
     font-size: 1.5em;
-    color: #5d545d;
+    color: #f6f6f6;
 }
 
 #nombreClock {
     font-family: 'Raleway', sans-serif;
     font-size: 1em;
-    color: #5d545d;
+    color: #f6f6f6;
 }
 .fecha{
-    color: #404040; font-size: 1.3em; font-family: montserrat; text-transform: uppercase;
+    color: #362536; font-size: 1.3em; font-family: montserrat; text-transform: uppercase;
 }
 
 .fecha span{
@@ -118,7 +125,7 @@ header#intro{
     text-decoration: none;
     border-radius: 5px;
     border: solid 0px #c4c4c4;
-    margin-bottom: 70px;
+    margin-bottom: 20px;
     font-size: 14px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -131,7 +138,7 @@ header#intro{
     #separador {
         font-family: 'Amita';
         font-size: 1.5em;
-        color: #5d545d;
+        color: #f6f6f6;
     }
     #fecha .col-xs-2,
     #fecha .col-xs-1 {
@@ -144,7 +151,7 @@ header#intro{
         flex-wrap: wrap;
     }
     .nombre {
-        font-size: 7em;
+        font-size: 4em;
         /* margin-top: 1em; */
     }
     #titulo {
@@ -154,7 +161,7 @@ header#intro{
         height: 80vh;
         display: flex;
         flex-direction: column;
-        justify-content: flex-end;
+        justify-content: space-between;
     }
     #cuando{
         display: flex;
@@ -170,7 +177,7 @@ header#intro{
         font-family: 'Raleway', sans-serif; font-weight: 400; text-align: center; color: #362536;
     }
     #lugar{
-        font-family: 'Great Vibes', cursiva; font-weight: 400; font-size: 2.5em; text-align: center; color: #362536;
+        font-family: 'Great Vibes', cursiva; font-weight: 400; font-size: 2em; text-align: center; color: #362536;
     }
     #dresscode{
         margin-bottom: 5vh !important;
