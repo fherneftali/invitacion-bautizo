@@ -732,7 +732,7 @@ table {
 #verMapa, #btnConfirma {
     background-image: url(images/nude2.jpg) !important;
     font-weight: 400;
-    color: #FFF;
+    color: #362536;
     width: auto;
     /* border-radius: 50%; */
     height: 2.5em;
@@ -2034,7 +2034,7 @@ body.is-touch .poptrox-popup .closer {
 
 #header nav ul li a {
     display: block;
-    color: #362536;
+    color: #805303;
     text-decoration: none;
     height: 3em;
     line-height: 3em;
@@ -2592,4 +2592,12 @@ p {
 @font-face {
     font-family: 'Bluebird';
     src: url("../webfonts/Hello-Bluebird-Script-Regular.otf");
+}
+@font-face {
+    font-family: 'Howells';
+    src: url("../webfonts/Howells.otf");
+}
+@font-face {
+    font-family: 'BestGirl';
+    src: url("../webfonts/Best-Girl.otf");
 }

@@ -12,6 +12,7 @@
 
 #div-titulo{
     padding: 15px;
+    margin-top: 5vh;
     /* background: linear-gradient(0deg, rgba(180,176,176,1) 0%,  rgba(54,37,54,1) 100%);
     /* linear-gradient(0deg, rgba(180,176,176,1) 0%, rgba(196,196,196,1) 23%, rgba(113,113,113,1) 100%);     */
     /*-webkit-background-clip: text;
@@ -25,8 +26,9 @@
 }
 
 .nombre {
-    font-family: 'Great Vibes', cursiva;
-    color: #f6f6f6;
+    font-family: "Gwendolyn", cursive;
+    font-weight: 700;
+    color: #d68c9d;
     /*#d68c9d*/
 }
 
@@ -47,13 +49,13 @@ header#intro{
 #separador {
     font-family: 'Raleway', sans-serif;
     font-size: 1.5em;
-    color: #d18f19;
+    color: #362536;
 }
 
 #nombreClock {
     font-family: 'Raleway', sans-serif;
     font-size: 1em;
-    color: #d18f19;
+    color: #362536;
 }
 .fecha{
     color: #362536; font-size: 1.3em; font-family: montserrat; text-transform: uppercase;
@@ -138,7 +140,7 @@ header#intro{
     #separador {
         font-family: 'Amita';
         font-size: 1.5em;
-        color: #f6f6f6;
+        color: #362536;
     }
     #fecha .col-xs-2,
     #fecha .col-xs-1 {
@@ -151,7 +153,7 @@ header#intro{
         flex-wrap: wrap;
     }
     .nombre {
-        font-size: 4em;
+        font-size: 6em;
         /* margin-top: 1em; */
     }
     #titulo {
