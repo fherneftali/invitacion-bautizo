@@ -2308,7 +2308,7 @@ p {
         padding: 2em 15px 2em 15px;
     }
     .main.style1 h2 {
-        font-size: 2.3em;
+        font-size: 3.5em;
     }
     .main.style2 {
         flex-direction: column;
@@ -2470,7 +2470,7 @@ p {
         padding-top: 0;
     }
     #intro {
-        background: url("images/overlay-copia2.png"), url("../../assets/images/file.png");
+        background: url("images/overlay-copia2.png"), url("../../assets/images/file.gif");
     }
 }
 
@@ -2503,9 +2503,11 @@ p {
     background-size: 100%, cover;
     background-attachment: fixed, fixed; 
     background-position: top left, center center;
-    background-repeat: no-repeat;
-    box-shadow: 0px 0 15px 10px #764273;
-    */
+    background-repeat: no-repeat;*/
+    box-shadow: -1px 9px 75px 0px rgba(221,162,158,0.52) inset;
+    -webkit-box-shadow: -1px 9px 75px 0px rgba(221,162,158,0.52) inset;
+    -moz-box-shadow: -1px 9px 75px 0px rgba(221,162,158,0.52) inset;
+    
 }
 
 

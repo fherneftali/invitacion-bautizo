@@ -27,6 +27,7 @@
 
 .nombre {
     font-family: "Gwendolyn", cursive;
+    text-transform: capitalize;
     font-weight: 700;
     color: #d68c9d;
     /*#d68c9d*/
@@ -34,8 +35,8 @@
 
 .nombre2 {
     font-family: 'Great Vibes', cursiva;
+    text-transform: capitalize;
     color: #d68c9d;
-    font-size: 4em;
 }
 
 header#intro{
@@ -56,6 +57,7 @@ header#intro{
     font-family: 'Raleway', sans-serif;
     font-size: 1em;
     color: #362536;
+    text-transform: uppercase
 }
 .fecha{
     color: #362536; font-size: 1.3em; font-family: montserrat; text-transform: uppercase;
@@ -153,7 +155,7 @@ header#intro{
         flex-wrap: wrap;
     }
     .nombre {
-        font-size: 6em;
+        font-size: 7em;
         /* margin-top: 1em; */
     }
     #titulo {
