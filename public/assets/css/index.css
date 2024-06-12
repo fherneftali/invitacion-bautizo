@@ -1,7 +1,7 @@
 #titulo {
     font-family: 'Raleway', sans-serif;
     font-size: 1.3em;
-    color: #f6f6f6;
+    color: #d18f19;
 }
 
 #titulox {
@@ -47,13 +47,13 @@ header#intro{
 #separador {
     font-family: 'Raleway', sans-serif;
     font-size: 1.5em;
-    color: #f6f6f6;
+    color: #d18f19;
 }
 
 #nombreClock {
     font-family: 'Raleway', sans-serif;
     font-size: 1em;
-    color: #f6f6f6;
+    color: #d18f19;
 }
 .fecha{
     color: #362536; font-size: 1.3em; font-family: montserrat; text-transform: uppercase;
