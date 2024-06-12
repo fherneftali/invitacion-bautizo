@@ -729,7 +729,7 @@ table {
     }
 }
 
-#verMapa, #btnConfirma {
+#verMapa, #btnConfirma{
     background-image: url(images/nude2.jpg) !important;
     font-weight: 400;
     color: #362536;
