@@ -2499,6 +2499,8 @@ p {
 
 #one {
     background-color: rgb(255, 255, 255);
+    background-image: url(../images/Diapositiva4-6.jpg) !important;
+    background-size: cover;
     /* background: url("images/overlay.png"), url("../../images/quinta-don-manuel.jpg");
     background-size: 100%, cover;
     background-attachment: fixed, fixed; 
@@ -2515,7 +2517,8 @@ p {
 
 #two {
     /* background: url("images/overlay.png"), url("../../images/two.jpg"); */
-    background-size: 256px 256px, cover;
+    background-image: url(../images/bg-textura.png) !important;
+    background-size: cover;
     background-attachment: fixed, fixed;
     background-position: top left, center center;
     background-color: #ffffff;
@@ -2556,7 +2559,9 @@ p {
     -ms-transform: translateY(0);
     transform: translateY(0);
     position: relative;
-    box-shadow: 9px 9px 15px #460816;
+    box-shadow: 0px 0px 15px #d68c9d;
+    border-radius: 4%;
+    margin-bottom: 2em;
 }
 
 #contact.inactive .box {

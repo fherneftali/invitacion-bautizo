@@ -141,6 +141,17 @@ header#intro{
     color: #362536;
 }
 
+#pases{
+    background-image: url(../images/ticket.png);
+    background-size: cover;
+    height: 35vh;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
 @media screen and (max-width: 736px) {
     #days,
     #hours,
@@ -189,6 +200,9 @@ header#intro{
     }
     #lugar{
         font-family: 'Great Vibes', cursiva; font-weight: 400; font-size: 2em; text-align: center; color: #362536;
+    }
+    #personas{
+        font-family: 'Great Vibes', cursiva; font-weight: 400; font-size: 3em; text-align: center; color: #362536;
     }
     #dresscode{
         margin-bottom: 5vh !important;
