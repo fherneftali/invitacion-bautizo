@@ -30,7 +30,7 @@ document.getElementById('agregarCalendario').addEventListener('click', function(
     var link = window.URL.createObjectURL(blob);
     var a = document.createElement('a');
     a.href = link;
-    a.download = 'bautizoanayleth.ics';
+    a.download = 'bautizoastrid.ics';
     a.click();
     window.URL.revokeObjectURL(link);
 });
