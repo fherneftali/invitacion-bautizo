@@ -106,10 +106,13 @@ $("#btnConfirma").on('click', async function(){
     } else {
 
     }
+    let searchParams = currentUrl.searchParams;
     const docRef = await addDoc(collection(db, "confirmaciones"), {
         asistencia: asiste,
         nombre: $("#nombre").val(),
         mensaje: $('#message').val(), 
+        adults: searchParams.get('ad'),
+        childs: searchParams.get('cl')
     });
     if(asiste =='si'){
         Swal.fire(`${$("#nombre").val()} has confirmado tu asistencia`,'¡Preparate para el gran día!', 'success');
@@ -171,7 +174,7 @@ $("#vwlogin").ready(async function (){
     const querySnapshot = await getDocs(collection(db, "confirmaciones"));
     querySnapshot.forEach((doc) => {
         contador += 1;
-        template+=`<div class="card">
+        template+=`<div class="card box" style="width: 40vw">
             <div class="card-header">
                 ${doc.data().nombre}
             </div>

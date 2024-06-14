@@ -2549,7 +2549,7 @@ p {
     /* box-shadow: inset 0px 15px 10px -10px #460816; */
 }
 
-#contact .box {
+#contact .box, #listaConfirmados .box{
     -moz-transition: -moz-transform 1s ease;
     -webkit-transition: -webkit-transform 1s ease;
     -ms-transition: -ms-transform 1s ease;
