@@ -329,8 +329,10 @@
         }else{
             $("#adultos").text(searchParams.get('ad'));
             $("#txtadult").text(searchParams.get('ad') > 1 ? " adultos" : " adulto");
-            $("#ninos").text(searchParams.get('ch') == 0 ? "" : searchParams.get('ch'));
-            $("#txtchild").text(searchParams.get('ch') > 1 ? " niños" : searchParams.get('ch') == 0 ? "" : " niño");
+            if(searchParams.get('ch') != null){
+                $("#ninos").text(searchParams.get('ch') == 0 ? "" : searchParams.get('ch'));
+                $("#txtchild").text(searchParams.get('ch') > 1 ? " niños" : searchParams.get('ch') == 0 ? "" : " niño");
+            }
             window.history.replaceState(null, '', currentUrl.toString());
         }
     }else{
