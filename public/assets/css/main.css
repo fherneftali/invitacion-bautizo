@@ -2549,7 +2549,7 @@ p {
     /* box-shadow: inset 0px 15px 10px -10px #460816; */
 }
 
-#contact .box, #listaConfirmados .box{
+#contact .box {
     -moz-transition: -moz-transform 1s ease;
     -webkit-transition: -webkit-transform 1s ease;
     -ms-transition: -ms-transform 1s ease;
@@ -2560,6 +2560,36 @@ p {
     transform: translateY(0);
     position: relative;
     box-shadow: 0px 0px 15px #d68c9d;
+    border-radius: 4%;
+    margin-bottom: 2em;
+}
+
+#listaConfirmados .boxyes{
+    -moz-transition: -moz-transform 1s ease;
+    -webkit-transition: -webkit-transform 1s ease;
+    -ms-transition: -ms-transform 1s ease;
+    transition: transform 1s ease;
+    -moz-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+    position: relative;
+    box-shadow: 0px 0px 15px #d68c9d;
+    border-radius: 4%;
+    margin-bottom: 2em;
+}
+
+#listaConfirmados .boxnot{
+    -moz-transition: -moz-transform 1s ease;
+    -webkit-transition: -webkit-transform 1s ease;
+    -ms-transition: -ms-transform 1s ease;
+    transition: transform 1s ease;
+    -moz-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+    position: relative;
+    box-shadow: 0px 0px 15px #b0a5a7;
     border-radius: 4%;
     margin-bottom: 2em;
 }
