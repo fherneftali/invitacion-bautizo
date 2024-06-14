@@ -331,7 +331,6 @@
             $("#txtadult").text(searchParams.get('ad') > 1 ? " adultos" : " adulto");
             $("#ninos").text(searchParams.get('ch') == 0 ? "" : searchParams.get('ch'));
             $("#txtchild").text(searchParams.get('ch') > 1 ? " niños" : searchParams.get('ch') == 0 ? "" : " niño");
-            // Actualizar la URL sin recargar la página
             window.history.replaceState(null, '', currentUrl.toString());
         }
     }else{
