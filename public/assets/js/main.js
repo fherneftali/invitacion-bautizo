@@ -209,5 +209,4 @@
         .on('load', function() {
             $window.trigger('resize');
         });
-
 })(jQuery);

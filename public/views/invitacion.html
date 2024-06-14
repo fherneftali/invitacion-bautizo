@@ -170,7 +170,9 @@
         <div id="pases">
             <div>
                 <p style="font-weight: 600; font-size:1.5rem; padding: 0; margin-top: 0; color: #362536; letter-spacing: 2px;">PASE VALIDO PARA:</p>
-                <span id="personas">2</span><span id="lugar"> personas</span>
+                <span id="adultos"></span><span id="txtadult"></span>
+                <br>
+                <span id="ninos"></span><span id="txtchild"></span>
             </div>
         </div>
         <header style="text-align: center;">
@@ -304,4 +306,39 @@
             $("#alerta").css('display', 'flex');
         }
     }
+
+    // Obtener la URL actual
+    let currentUrl = new URL(window.location.href);
+
+    // Obtener los parámetros de búsqueda (query parameters)
+    let searchParams = currentUrl.searchParams;
+
+    // Verificar si el parámetro tck con el valor 2a1c existe
+    if (!searchParams.has('ad')) {
+        searchParams.set('ad', '1');
+        $("#adultos").text(searchParams.get('ad'));
+        $("#txtadult").text(" adulto");
+        window.history.replaceState(null, '', currentUrl.toString());
+    }else if (searchParams.has('ad') || searchParams.has('ch')) {
+        if(searchParams.get('ad') == 0){
+            searchParams.set('ad', '1');
+            searchParams.delete('ch', searchParams.get('ch'));
+            $("#adultos").text(searchParams.get('ad'));
+            $("#txtadult").text(" adulto");
+            window.history.replaceState(null, '', currentUrl.toString());
+        }else{
+            $("#adultos").text(searchParams.get('ad'));
+            $("#txtadult").text(searchParams.get('ad') > 1 ? " adultos" : " adulto");
+            $("#ninos").text(searchParams.get('ch') == 0 ? "" : searchParams.get('ch'));
+            $("#txtchild").text(searchParams.get('ch') > 1 ? " niños" : searchParams.get('ch') == 0 ? "" : " niño");
+            // Actualizar la URL sin recargar la página
+            window.history.replaceState(null, '', currentUrl.toString());
+        }
+    }else{
+        searchParams.set('ad', '1');
+        $("#adultos").text(searchParams.get('ad'));
+        $("#txtadult").text(searchParams.has('ad') > 1 ? " adulto(s)" : " adulto");
+        window.history.replaceState(null, '', currentUrl.toString());
+    }
+    
 </script>

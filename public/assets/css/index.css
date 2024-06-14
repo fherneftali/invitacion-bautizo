@@ -143,7 +143,7 @@ header#intro{
 
 #pases{
     background-image: url(../images/ticket.png);
-    background-size: cover;
+    background-size: 90vw;
     height: 35vh;
     width: 90%;
     display: flex;
@@ -198,10 +198,10 @@ header#intro{
     .direccion, #dresscode{
         font-family: 'Raleway', sans-serif; font-weight: 400; text-align: center; color: #362536;
     }
-    #lugar{
+    #lugar, #txtadult, #txtchild{
         font-family: 'Great Vibes', cursiva; font-weight: 400; font-size: 2em; text-align: center; color: #362536;
     }
-    #personas{
+    #adultos, #ninos{
         font-family: 'Great Vibes', cursiva; font-weight: 400; font-size: 3em; text-align: center; color: #362536;
     }
     #dresscode{

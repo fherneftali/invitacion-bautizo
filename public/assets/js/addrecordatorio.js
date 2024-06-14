@@ -1,7 +1,7 @@
 // Asignar los valores de PHP a variables de JavaScript
-var ano = "2023";
+var ano = "2024";
 var mes = Number("10") + 1; // Sumar 1 al mes
-var dia = "18";
+var dia = "13";
 var hora= "100000";
 
 // Asegurar que mes y día tengan dos dígitos
@@ -15,14 +15,14 @@ var startDate = ano + mes + dia + "T" + hora;
 document.getElementById('agregarCalendario').addEventListener('click', function(e) {
     e.preventDefault();
 
-    var title = "Recordatorio del Bautizo de Jessica Anaylet";
+    var title = "Recordatorio del Bautizo de Astrid";
     var description = "Llegó el gran día!";
 
     var icsMSG = "BEGIN:VCALENDAR\nVERSION:2.0\nBEGIN:VEVENT\n";
     icsMSG += "DTSTART;VALUE=DATE-TIME:" + startDate + "\n";
     icsMSG += "DESCRIPTION:" + description + "\n";
     icsMSG += "SUMMARY:" + title + "\n";
-    icsMSG += "LOCATION:" + "Parroquia de Nuestra Señora de San Juan de los Lagos \n";
+    icsMSG += "LOCATION:" + "Parroquia El Señor San José \n";
     icsMSG += "DTSTAMP:" + "20180210T093900Z \n";
     icsMSG += "END:VEVENT\nEND:VCALENDAR";
     console.log(icsMSG)

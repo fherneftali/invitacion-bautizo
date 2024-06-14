@@ -171,14 +171,26 @@ $("#vwlogin").ready(async function (){
     const querySnapshot = await getDocs(collection(db, "confirmaciones"));
     querySnapshot.forEach((doc) => {
         contador += 1;
-        template+=`<tr>
-            <td>${contador}</td>
-            <td>${doc.data().nombre}</td>
-            <td>${doc.data().asistencia}</td>
-            <td>${doc.data().mensaje}</td>
-        </tr>`;
+        template+=`<div class="card">
+            <div class="card-header">
+                ${doc.data().nombre}
+            </div>
+            <div class="card-body">
+                <blockquote class="blockquote mb-0">
+                <p>${doc.data().asistencia} asiste</p>
+                <footer class="blockquote-footer">${doc.data().mensaje}</footer>
+                </blockquote>
+            </div>
+            </div>`;
+
+        // <tr>
+        // <td>${contador}</td>
+        // <td>${doc.data().nombre}</td>
+        // <td>${doc.data().asistencia}</td>
+        // <td>${doc.data().mensaje}</td>
+        // </tr>
     });
-    $("#tbodylist").html(template);    
+    $("#listaConfirmados").html(template);    
 });
 
 //Obtener un documento
