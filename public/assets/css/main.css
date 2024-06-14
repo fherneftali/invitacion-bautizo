@@ -2489,7 +2489,7 @@ p {
 /* Intro */
 
 #intro {
-    background-size: auto, 100%;
+    background-size: auto, cover;
     background-repeat: repeat, no-repeat;
     background-color: #ffffff;
 }
